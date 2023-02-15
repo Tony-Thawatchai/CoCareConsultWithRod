@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Care Request</title>
+    <link rel="stylesheet" href="../styles/request.css">
+    <script type="module" src="../scripts/request.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+    <h1>Create New Request</h1>
+</header>
+
+<main>
+    <div class="wrapper">
+   
+        <form action="">
+
+            <div class="request-title">
+                <fieldset>
+                    <legend>Request Title</legend>
+                    
+                    <label class="type-of-help">
+                        <input class="checkbox-request-title" type="checkbox" name="drop-off" id="drop-off" value="drop-off" />
+                        I need drop off to school
+                    </label>
+                    <label class="type-of-help">
+                        <input class="checkbox-request-title" type="checkbox" name="pick-up" id="pick-up" value="pick-up" />
+                        I need pick up from school 
+                    </label>
+                    <label class="type-of-help">
+                        <input class="checkbox-request-title" type="checkbox" name="host" id="host" value="host" />
+                        I need host after school
+                    </label> 
+                    <label class="type-of-help">
+                        <input class="checkbox-request-title" type="checkbox" name="other" id="other" value="other" />
+                        I need other type of help
+                    </label>
+                </fieldset>
+            </div>
+
+            <div class="details">
+                <div class="request-details">
+                    <label>
+                        Request Details: 
+                        <textarea id="request-details" name="request-details" placeholder="School's name and address, child's home address, other."></textarea>
+                    </label>
+                </div>
+
+                <div class="kid-details">
+                    <label>
+                        Kid Details: 
+                        <textarea id="kid-details" name="kid-details" placeholder="Child's name, age, grade, allergies, other"></textarea>
+                    </label>
+                </div>
+           
+
+            <div class="date">
+                <label for="date">
+                    Date: 
+                    <input type="date" id="date">
+                </label>
+            </div>
+           
+
+            <div class="time">
+                <label for="time">
+                    Time: 
+                <input type="time" id="time">
+                </label>
+            </div>
+        </div>
+
+            <div class="buttons">
+                <button id="submit">Submit
+                </button>
+                <button id="clear">Clear
+                </button>
+            </div>
+
+        </form>
+     </div>
+
+     <div class="help-request-card">
+
+        <table id="outputArea">
+            <caption>Your request form is created</caption>
+          
+              <tr>
+                <td></td>
+              </tr>
+              <tr>
+                <td></td>
+              </tr>
+              <tr>
+                <td></td>
+              </tr>
+              <tr>
+                <td></td>
+              </tr>
+              <tr>
+                <td></td>
+              </tr>
+           
+          </table>
+        
+    </div>			
+
+</main> 
+
+<footer>
+
+</footer>
+
+</body>
+</html>
